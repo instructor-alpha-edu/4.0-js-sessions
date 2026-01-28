@@ -1,6 +1,35 @@
-.blue-text {
-  color: rgb(68, 114, 231);
-  font-size: 36px;
-  font-weight: 500;
-  text-decoration: underline;
+.circle {
+  margin-top: 8px;
+  width: 100px;
+  height: 100px;
+  background: blueviolet;
+  border-radius: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+#form {
+  padding: 12px;
+  border: 1px solid #a8a8a8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.greet {
+  padding: 8px 12px;
+  background: #f16a6a;
+  margin-top: 12px;
+}
+
+.greet-name {
+  color: rgb(62, 62, 228);
+}
+
+.error {
+  color: red;
+  font-weight: 600;
 }

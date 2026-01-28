@@ -7,18 +7,14 @@
     <title>DOM practice</title>
   </head>
   <body>
-    <h1>DOM-дерево</h1>
+    <form action="" id="form">
+      <input type="text" name="username" id="usernameInput" placeholder="Введите свой никнейм" />
+      <button type="submit">Отправить</button>
+    </form>
 
-    <section>
-      <h2>Список покупок:</h2>
-      <span>Необходимо купить следующие товары:</span>
-      <ul>
-        <li>Хлеб</li>
-        <li id="milk">Молоко <span>(3,2%)</span></li>
-        <li>Курица</li>
-      </ul>
-      <div class="container"></div>
-    </section>
-    <script src="./js/script.js"></script>
+    <div class="greet hide">Привет, <span class="greet-name">гость</span>!</div>
+
+    <p class="error"></p>
+    <script src="./js/secondTask.js"></script>
   </body>
 </html>
