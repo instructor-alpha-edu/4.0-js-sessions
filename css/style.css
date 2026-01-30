@@ -1,4 +1,4 @@
-.circle {
+/* .circle {
   margin-top: 8px;
   width: 100px;
   height: 100px;
@@ -32,4 +32,105 @@
 .error {
   color: red;
   font-weight: 600;
+} */
+
+.form {
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.input {
+  border: 1px solid #dcdcdc;
+  outline: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.textarea {
+  resize: none;
+  height: 80px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.error {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  color: rgb(211, 28, 28);
+  font-weight: 400;
+}
+
+.hide {
+  opacity: 0;
+}
+
+label {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.submit {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: rgb(48, 48, 226);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.submit:hover {
+  background: rgb(67, 67, 248);
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-wrapper {
+  padding: 12px;
+  border-radius: 12px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-title {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.modal-text {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.modal-hide {
+  display: none;
 }

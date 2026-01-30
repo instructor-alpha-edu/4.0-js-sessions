@@ -7,14 +7,53 @@
     <title>DOM practice</title>
   </head>
   <body>
-    <form action="" id="form">
-      <input type="text" name="username" id="usernameInput" placeholder="Введите свой никнейм" />
-      <button type="submit">Отправить</button>
+    <form class="form">
+      <h2 class="form-title">Оставьте вашу заявку</h2>
+
+      <div class="form-row">
+        <label for="fullNameInput">Ваше ФИО</label>
+        <input
+          type="text"
+          name="fullName"
+          id="fullNameInput"
+          placeholder="Введите ваше ФИО"
+          class="input"
+        />
+        <p class="error hide">Поле "ФИО" не должно быть пустым</p>
+      </div>
+
+      <div class="form-row">
+        <label for="emailInput">Ваш e-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="emailInput"
+          placeholder="Введите ваш email"
+          class="input"
+        />
+        <p class="error hide">Поле "E-mail" не должно быть пустым</p>
+      </div>
+
+      <div class="form-row">
+        <label for="emailInput">Ваше сообщение</label>
+        <textarea
+          name="message"
+          id="messageInput"
+          class="input textarea"
+          placeholder="Введите ваше сообщение"
+        ></textarea>
+        <p class="error hide">Поле "сообщение" не должно быть пустым</p>
+      </div>
+
+      <button type="submit" class="submit">Отправить</button>
     </form>
 
-    <div class="greet hide">Привет, <span class="greet-name">гость</span>!</div>
-
-    <p class="error"></p>
-    <script src="./js/secondTask.js"></script>
+    <div class="modal">
+      <div class="modal-wrapper">
+        <h2 class="modal-title">Ваша заявка отправлена</h2>
+        <p>Наши специалисты в течение 24 часов рассмотрят вашу заявку</p>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
