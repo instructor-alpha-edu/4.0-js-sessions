@@ -1,8 +1,12 @@
+import { testNumber } from "./test.js";
+
 const inputs = document.querySelectorAll(".input");
 const errors = document.querySelectorAll(".error");
 const form = document.querySelector(".form");
 const modal = document.querySelector(".modal");
 let errorsCount = 0;
+
+console.log(testNumber + 10);
 
 function resetAllErrors() {
   errorsCount = 0;
